@@ -37,9 +37,10 @@ int main(int argc, char** argv)
 	/* Write code to calculate C = A * B. */
 	/**************************************/
 	int k;
+	double sum;
 	for(i = 0; i < n; i++) {
 		for(j = 0; j < n; j++) {
-			int sum = 0;
+			sum = 0;
 			for(k = 0; k < n; k++) {
 				sum += a[i * n + k] * b[k * n + j];
 			}
@@ -51,7 +52,6 @@ int main(int argc, char** argv)
 	printf("time: %.6lf sec\n", end - begin);
 
 	// Print C for debugging. Comment out the print before measuring the execution time.
-	double sum = 0;
 	for (i = 0; i < n; i++) {
 		for (j = 0; j < n; j++) {
 			sum += c[i * n + j];

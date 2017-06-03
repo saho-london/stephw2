@@ -34,3 +34,4 @@
 # Temp file
 *.cpp~
 .gitignore~
+*.sh~
