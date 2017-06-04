@@ -1,5 +1,0 @@
-set terminal png
-set output 'graph.png'
-plot "data.txt"
-replot 16*x**3/1000000000
-
